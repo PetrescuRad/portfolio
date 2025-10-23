@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { Container, Typography, Button, Avatar, Icon } from '@mui/material';
+import { Container, Typography, Button, Avatar} from '@mui/material';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -40,8 +41,7 @@ const HomePage = () => {
             sx={{ width: 300, height: 300, marginBottom: '30px', objectFit: 'cover', objectPosition: 'center top' }}
           />
           <Typography variant="h5" sx={{ mb: 4 }}>Software Engineer passionate about AI, Web Development, and Technology.</Typography>
-          <Icon></Icon>
-
+          <KeyboardArrowDownIcon className="arrow-icon" sx={{ fontSize: 50, color: 'white' }} />
         </Container>,
 
         <Container className="home-container">
@@ -56,12 +56,14 @@ const HomePage = () => {
             height="600px"
             style={{ border: 'none', borderRadius: '12px', marginTop: '20px' }}
           ></iframe>
-
+          <KeyboardArrowDownIcon className="arrow-icon" sx={{ fontSize: 50, color: 'white' }}/>
         </Container>,
 
         <Container className="home-container">
           <Typography variant="h5" sx={{ mb: 4 }}>Want to see what I’ve built?</Typography>
           <Button variant="contained" href="/projects" sx={{ fontWeight: 600 }}>View My Work</Button>
+          <Typography variant="h5" sx={{ mt: 4, mb: 4 }}>Like what you see? Let's chat!</Typography>
+          <Button variant="contained" href="/contact" sx={{ fontWeight: 600 }}>Contact me</Button>
         </Container>,
       ].map((content, index) => (
         <div

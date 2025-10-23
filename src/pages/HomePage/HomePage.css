@@ -1,5 +1,5 @@
 .home-section {
-  height: 300vh; /* 3 blocks = 3 * 100vh */
+  height: 240vh; /* 3 blocks = 3 * 100vh */
   overflow-x: hidden;
   background: linear-gradient(135deg, #2a2a72, #009ffd);
   background-attachment: fixed;
@@ -19,7 +19,7 @@ html, body {
 .home-block {
   position: sticky;
   top: 0;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,4 +60,13 @@ html, body {
   .home-block {
     transition: transform 0.8s ease, opacity 0.8s ease;
   }
+}
+
+.arrow-icon {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
