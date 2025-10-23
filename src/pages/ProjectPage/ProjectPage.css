@@ -1,0 +1,15 @@
+.projects-section {
+  background: #121212;
+  padding: 80px 0;
+  color: white;
+}
+
+.project-card {
+  background: #1f1f1f !important;
+  border-radius: 12px !important;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}

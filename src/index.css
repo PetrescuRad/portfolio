@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* hide scrollbar in Chrome, Safari, Opera */
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

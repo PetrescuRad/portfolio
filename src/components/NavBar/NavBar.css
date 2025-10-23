@@ -1,0 +1,27 @@
+.navbar {
+  backdrop-filter: blur(16px);
+  background: rgba(15, 15, 15, 0.8) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-links button {
+  color: white !important;
+  margin-left: 16px;
+  text-transform: none;
+}

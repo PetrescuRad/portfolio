@@ -1,0 +1,63 @@
+.home-section {
+  height: 300vh; /* 3 blocks = 3 * 100vh */
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Hide scrollbar but still scrollable */
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.home-section::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each block takes up a full screen and sticks while transitioning */
+.home-block {
+  position: sticky;
+  top: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Content box styling */
+.home-container {
+  color: white;
+  max-width: 950px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+  will-change: transform, opacity;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  display: flex !important;
+  flex-direction: column !important;     /* stack vertically */
+  align-items: center !important;        /* center horizontally */
+  justify-content: center !important;    /* center vertically */
+}
+
+/* Active block (the one currently in view) appears larger and bright */
+.home-block.active .home-container {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Inactive (previous/next) blocks fade out and shrink */
+.home-block.inactive .home-container {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+/* Optional subtle fade for smoother look */
+@media (prefers-reduced-motion: no-preference) {
+  .home-block {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+  }
+}
