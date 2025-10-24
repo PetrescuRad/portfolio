@@ -55,13 +55,6 @@ html, body {
   opacity: 0;
 }
 
-/* Optional subtle fade for smoother look */
-@media (prefers-reduced-motion: no-preference) {
-  .home-block {
-    transition: transform 0.8s ease, opacity 0.8s ease;
-  }
-}
-
 .arrow-icon {
   animation: bounce 2s infinite;
 }
