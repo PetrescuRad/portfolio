@@ -61,9 +61,9 @@ const HomePage = () => {
 
         <Container className="home-container">
           <Typography variant="h5" sx={{ mb: 4 }}>Want to see what I’ve built?</Typography>
-          <Button variant="contained" href="/projects" sx={{ fontWeight: 600 }}>View My Work</Button>
+          <Button variant="contained" href="/portfolio/#/projects" sx={{ fontWeight: 600 }}>View My Work</Button>
           <Typography variant="h5" sx={{ mt: 4, mb: 4 }}>Like what you see? Let's chat!</Typography>
-          <Button variant="contained" href="/contact" sx={{ fontWeight: 600 }}>Contact me</Button>
+          <Button variant="contained" href="/portfolio/#/contact" sx={{ fontWeight: 600 }}>Contact me</Button>
         </Container>,
       ].map((content, index) => (
         <div
