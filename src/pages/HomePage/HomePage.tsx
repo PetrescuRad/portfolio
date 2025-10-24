@@ -37,7 +37,7 @@ const HomePage = () => {
           <Typography variant="h2" sx={{ fontWeight: 800, mb: 2 }}>Hi, I’m Radu 👋</Typography>
           <Avatar
             alt="Radu Petrescu"
-            src="images/portrait.jpg"
+            src={`${process.env.PUBLIC_URL}/images/portrait.jpg`}
             sx={{ width: 300, height: 300, marginBottom: '30px', objectFit: 'cover', objectPosition: 'center top' }}
           />
           <Typography variant="h5" sx={{ mb: 4 }}>Software Engineer passionate about AI, Web Development, and Technology.</Typography>
@@ -51,7 +51,7 @@ const HomePage = () => {
           </Typography>
           <iframe
             title='CV'
-            src="/documents/Radu_Petrescu_CV_ATS_Eng.pdf"
+            src={`${process.env.PUBLIC_URL}/documents/Radu_Petrescu_CV_ATS_Eng.pdf`}
             width="100%"
             height="600px"
             style={{ border: 'none', borderRadius: '12px', marginTop: '20px' }}

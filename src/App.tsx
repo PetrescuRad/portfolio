@@ -5,8 +5,9 @@ import AppRoutes from './routes/AppRoutes';
 function App() {
   return (
     <>
-      <NavBar/>
+      
       <main>
+        <NavBar/>
         <AppRoutes/>
       </main>
     </>

@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, useLocation} from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useLocation, HashRouter} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion";
 import HomePage from '../pages/HomePage/HomePage'
 import ProjectPage from '../pages/ProjectPage/ProjectPage'
@@ -21,9 +21,9 @@ const AnimatedRoutes = () => {
 
 const AppRoutes = () => {
   return (
-    <Router>
+    <HashRouter>
       <AnimatedRoutes />
-    </Router>
+    </HashRouter>
   );
 };
 

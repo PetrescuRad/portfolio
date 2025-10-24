@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -15,9 +16,9 @@ const NavBar = () => {
           Radu Petrescu
         </Typography>
         <Box className="navbar-links">
-          <Button color="inherit" href='/home'>Home</Button>
-          <Button color="inherit" href='/projects'>Projects</Button>
-          <Button color="inherit" href='/contact'>Contact</Button>
+          <Button color="inherit" href='/portfolio/#/home'>Home</Button>
+          <Button color="inherit" href='/portfolio/#/projects'>Projects</Button>
+          <Button color="inherit" href='/portfolio/#/contact'>Contact</Button>
         </Box>
       </Toolbar>
     </AppBar>

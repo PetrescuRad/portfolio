@@ -101,7 +101,7 @@ const Projects = () => {
           >
             <Grid container spacing={2} alignItems="center">
               <Grid item xs={12} md={6}>
-                <ImageMagnifier src={proj.image} alt={proj.title} />
+                <ImageMagnifier src={`${process.env.PUBLIC_URL}/${proj.image}`} alt={proj.title} />
               </Grid>
               <Grid item xs={12} md={6}>
                 <CardContent>
@@ -117,7 +117,7 @@ const Projects = () => {
                   <ul>
                     {proj.links?.map((link, i) => (
                       <li key={i}>
-                        <a href={link} target="_blank" rel="noopener noreferrer">
+                        <a href={`${process.env.PUBLIC_URL}/${link}`} target="_blank" rel="noopener noreferrer">
                           Download Full Report #{i + 1} Here
                         </a>
                       </li>
