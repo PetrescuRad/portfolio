@@ -26,10 +26,10 @@ const projects = [
     ],
     image: '/images/ml_examples.png',
     links: [
-      '/documents/ml_a1.pdf',
-      '/documents/ml_a2.pdf',
-      '/documents/ml_a3.pdf',
-      '/documents/ml_a4.pdf',
+      '/documents/assignment1_group-8.pdf',
+      '/documents/assignment2_group-1.pdf',
+      '/documents/assignment3_group-35.pdf',
+      '/documents/assignment4_group-7.pdf',
     ],
   },
   {
